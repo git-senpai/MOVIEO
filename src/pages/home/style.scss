@@ -1,0 +1,33 @@
+.carouselSection {
+    position: relative;
+    margin-bottom: 70px;
+    & > .contentWrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+   .carouselTitle {
+    font-size: 24px;
+    font-weight: normal;
+    display: inline-flex;
+    align-items: center;
+    color: white; /* Default color for text and icon */
+    transition: color 0.2s ease; /* Smooth color transition for text and icon */
+}
+
+.carouselTitle:hover .text {
+    background-position: 0 0; /* Shift the gradient to show pink on hover */
+}
+
+.carouselTitle svg {
+    margin-left: 8px; /* Space between the text and icon */
+    transition: color 0.2s ease;
+}
+
+.carouselTitle:hover {
+    color: var(--pink); /* Changes the icon to pink on hover */
+}
+
+
+}
